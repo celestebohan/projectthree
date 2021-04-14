@@ -1,0 +1,65 @@
+@font-face {
+  font-family: accent;
+  src: url(./accent.ttf);
+}
+
+@font-face {
+  font-family: almendra;
+  src: url(./AlmendraDisplay.ttf);
+}
+
+@font-face {
+  font-family: notosans;
+  src: url(./NotoSansThin.otf);
+}
+
+html{
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+  width: 100vw;
+  height: 2.7em;
+  font-size: 2.5em;
+  display:grid;
+  grid-template-rows: repeat(101);
+  font-family: accent, almendra, notosans;
+  padding: none;
+  color: white;
+  mix-blend-mode: difference;
+  padding: 0;
+	margin: 0;
+  letter-spacing: 1vh;
+
+
+}
+
+.container{
+  z-index: -100;
+}
+.paint-image.active{
+  display: block;
+  align-items: center;
+  padding: none;
+  mix-blend-mode: overlay;
+
+}
+.paint-image{
+width: auto;
+height: 80vh;
+display:none;
+padding: none;
+}
+
+@media (max-width:500px) {
+  h2{
+height: 21vh;
+
+    }
+
+.paint-image{
+  width: 90vw;
+  height: auto;
+  }
+}
