@@ -32,6 +32,7 @@ function keyPressed(){
 
 
 function draw(){
+   noStroke();
    if (mouseIsPressed === true) {
     // noFill();
     fill(colors[Math.floor(Math.random() * colors.length)]);
@@ -40,7 +41,7 @@ function draw(){
   ellipse(mouseX, mouseY, 100, 100);
 // fill(255,0,0,63);
 
- noStroke();
+
 }
 
 

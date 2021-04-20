@@ -44,3 +44,27 @@ html
 // closeInfoButton.addEventListener('click', closeInfo);
 
 // let closeInfoButton = document.querySelector('#close-info');
+
+
+
+
+
+
+let painting = document.getElementById('painting');
+const onMouseMove = (e) =>{
+  painting.style.left = e.pageX + 'px';
+  painting.style.top = e.pageY + 'px';
+  painting.style.background = colors[Math.floor(Math.random() * colors.length)];
+  // if (painting.style.background = paintContainer.style.backgroundColor){
+  // console.log(paintContainer.style.backgroundColor)}
+}
+document.addEventListener('mousemove', onMouseMove);
+
+
+function sameColor(){
+  console.log(painting.style.background);
+
+  // if (painting.style.background = paintContainer.style.backgroundColor){
+  //   console.log(samecolor);}
+
+}
